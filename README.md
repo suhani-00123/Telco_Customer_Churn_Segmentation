@@ -1,95 +1,52 @@
-# Telco_Customer_Churn_Segmentation
-Built a Customer Churn Prediction system using Python, Pandas, Scikit-learn, XGBoost, and K-Means Clustering. Performed data cleaning, EDA, feature scaling, predictive modeling, customer segmentation, and churn probability analysis to help businesses reduce customer attrition and improve retention strategies.
-Customer Churn Prediction and Customer Segmentation
-# About the Project
+## About the Project
+The main goal of this project is to predict whether a customer is likely to leave a company (churn) or stay.
 
-Customer churn is a major challenge for businesses, as acquiring a new customer is often more expensive than retaining an existing one. This project aims to predict customer churn using Machine Learning and provide actionable insights that can help businesses improve customer retention strategies.
+In this project, I worked on the complete workflow—from understanding the data and cleaning it to building machine learning models and analyzing the results. It helped me understand how real-world business problems can be solved using data.
 
-The project begins with data cleaning and preprocessing, followed by Exploratory Data Analysis (EDA) to understand customer behavior and identify patterns associated with churn. Various customer attributes such as tenure, monthly charges, and total charges are analyzed to determine their impact on customer retention.
-
-To gain deeper insights into customer behavior, K-Means Clustering is used to segment customers into different groups based on their characteristics. This helps identify customer segments that are more likely to churn and enables businesses to design targeted retention campaigns.
-
-For churn prediction, an XGBoost Classification model is trained to estimate the probability of a customer leaving the service. The model learns from historical customer data and predicts churn risk for individual customers. These probability scores can help businesses proactively engage with high-risk customers before they decide to leave.
-
-The project also includes multiple visualizations such as churn distribution analysis, customer segmentation plots, feature importance analysis, and churn probability visualizations to make the results more interpretable and business-friendly.
-
-# Features
-✅ Data Cleaning and Preprocessing for handling missing values and preparing data for analysis.
-
-✅ Exploratory Data Analysis (EDA) to uncover customer behavior patterns and churn trends.
-
-✅ Feature Engineering and Data Transformation to improve model performance.
-
-✅ Customer Segmentation using K-Means Clustering to group customers based on tenure and spending behavior.
-
-✅ Customer Churn Prediction using XGBoost Classification.
-
-✅ Churn Probability Scoring to identify customers at risk of leaving.
-
-✅ Feature Importance Analysis to understand the factors influencing churn.
-
-✅ Data Visualization using Matplotlib and Seaborn for better interpretation of results.
-
-✅ Customer Risk Assessment for proactive retention planning.
-
-✅ Business-Oriented Insights to support data-driven decision making.
-
-✅ End-to-End Machine Learning Pipeline from data preprocessing to model evaluation.
-
-✅ Scalable framework that can be extended for real-time churn monitoring and deployments
-
-# Technologies Used
+## What I Did
+Loaded and explored the customer dataset.
+Cleaned the data by handling missing values and preparing it for analysis.
+Performed Exploratory Data Analysis (EDA) to understand customer behavior.
+Converted categorical data into numerical format.
+Scaled the data for better model performance.
+Trained multiple machine learning models.
+Compared the models and selected the best-performing one.
+Predicted customer churn probabilities.
+Created customer segments using clustering.
+Visualized important insights using graphs and charts.
+## Tools & Technologies
 Python
 
-Pandas – Data manipulation and analysis
+Pandas
 
-NumPy – Numerical computations
+NumPy
 
-Matplotlib – Data visualization
+Matplotlib
 
-Seaborn – Statistical data visualization
+Seaborn
 
-Scikit-learn – Data preprocessing, model evaluation, and K-Means clustering
+Scikit-learn
 
-XGBoost – Customer churn prediction model
+XGBoost
 
-# Project Workflow
-## 1. Data Preprocessing
-Handled missing values
-Converted categorical features into numerical format
-Scaled numerical features for clustering
-## 2. Exploratory Data Analysis
-Analyzed customer behavior patterns
-Identified factors contributing to churn
-Visualized important trends and relationships
-## 3. Customer Segmentation
+Jupyter Notebook
+## Approach Used
 
-Used K-Means Clustering to divide customers into different segments based on their behavior, tenure, and spending patterns.
+#### 1.Handle class Imbalance
+#### 2.Hyperparameter Tuning
+#### 3.Feature Importance Analysis
+#### 4.XGBoost Classifier
+## Scores
+| Approach                    | Accuracy | Precision |  Recall | F1-Score |
+| --------------------------- | -------: | --------: | ------: | -------: |
+| Handle Class Imbalance      |    80.5% |       69% |     50% |      58% |
+| Hyperparameter Tuning       |    80.5% |       54% | **83%** |  **66%** |
+| Feature Importance Analysis |    80.5% |       53% |     81% |      64% |
+| XGBoost Classifier          |    80.5% |       68% |     51% |      58% |
 
-## 4. Churn Prediction
+## Final Model
+After experimenting with different approaches, Hyperparameter Tuning was selected as the final approach because it achieved the highest Recall (83%) and F1-Score (66%) while maintaining an Accuracy of 80.5% and a ROC-AUC Score of 85%. This makes the model more effective at identifying customers who are likely to churn.
 
-Built an XGBoost classification model to predict whether a customer is likely to churn.
+## Project Outcome
 
-## 5. Churn Probability Analysis
-
-Calculated churn probabilities for individual customers and analyzed risk levels across different customer segments.
-
-# Key Insights
-Customers with shorter tenure are significantly more likely to churn compared to long-term customers.
-Higher monthly charges are often associated with increased churn risk, indicating that pricing may influence customer retention.
-Customer segmentation revealed distinct groups with different churn behaviors, allowing businesses to identify high-risk customer segments more effectively.
-Churn probability analysis helps prioritize customers who require immediate retention efforts.
-A small percentage of customers contribute disproportionately to overall churn, making targeted interventions more cost-effective than broad retention campaigns.
-Feature importance analysis showed that tenure, monthly charges, and total charges are among the most influential factors affecting churn predictions.
-Combining customer segmentation with churn prediction provides deeper business insights than using either approach independently.
-The model can help businesses proactively identify at-risk customers and implement personalized retention strategies before customer loss occurs.
-Data-driven decision-making can improve customer satisfaction, reduce attrition, and increase long-term profitability
-# Results
-
-The model successfully predicts customer churn and provides probability scores that can help businesses identify at-risk customers before they leave.
-
-# Future Improvements
-Deploy the model as a web application.
-Add real-time customer monitoring.
-Integrate recommendation systems for retention campaigns.
-Experiment with advanced deep learning models.
+The project can identify customers who are more likely to leave the company. This can help businesses take early actions to improve customer retention and reduce churn.
